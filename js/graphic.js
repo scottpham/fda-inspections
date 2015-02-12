@@ -7,10 +7,10 @@ var key = "https://docs.google.com/spreadsheets/d/1csm8rCsZoqlvciuwrAj36tJBTdauy
 	//punctuation or numbers in your column name
 //"title" is the column name you want to appear in the published table
 var columns = [ 
-    { "data": "name", "title": "Blood Bank" },
-    { "data": "date", "title": "Date of Last Inspection" },
-    { "data": "state", "title": "State" },
-    { "data": "city", "title": "City" }];
+    { "data": "name", "title": "Blood Bank", "width": "40%" },
+    { "data": "date", "title": "Date of Last Inspection", "width":"15%" },
+    { "data": "state", "title": "State", "width": "15%" },
+    { "data": "city", "title": "City", "width": "15%" }];
 
 $(document).ready(function() {
 
@@ -37,7 +37,8 @@ $(document).ready(function() {
             "data": data,
             "columns": columns, 
             "order":[[0, "asc"]], //order on 1st column
-            "pagingType": "simple" //no page numbers
+            "pagingType": "simple",
+			//no page numbers
 			//uncomment these options to simplify your table
 			//"paging": false,
 			//"searching": false,
